@@ -11,5 +11,4 @@ import java.util.UUID;
  */
 @Repository
 public interface TransactionAuditJpaRepository extends JpaRepository<TransactionAuditEntity, UUID> {
-    
 }
