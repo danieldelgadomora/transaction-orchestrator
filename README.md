@@ -1,7 +1,5 @@
 # Transaction Orchestrator Microservice
 
-**Prueba Técnica — TumiPay**
-
 ![Java](https://img.shields.io/badge/Java-17-blue) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-brightgreen) ![Architecture](https://img.shields.io/badge/Architecture-Hexagonal-orange) ![Tests](https://img.shields.io/badge/Tests-Unitarios%20%7C%20Integración-success)
 
 Microservicio de orquestación de transacciones de pago construido con **Spring Boot 3**, **Arquitectura Hexagonal (Ports & Adapters)**, **Resilience4j** y **Apache Kafka**. Expone una API REST para crear y consultar transacciones, enrutando cada operación al proveedor de pago correspondiente mediante un patrón Strategy + Registry, con auditoría asíncrona, control de idempotencia y protección ante fallos del PSP mediante Circuit Breaker.
